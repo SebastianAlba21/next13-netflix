@@ -22,7 +22,7 @@ const Input: React.FC<InputProps> = ({
         id={id}
         value={value}
         type={type}
-        className="block rounded-md px-6 pt-6 pb-1 w-full text-md text-white bg-neutral-700 appearance-none foucs:outline-none focus:ring-0 peer"
+        className="block rounded-md px-6 pt-4 pb-2 w-full text-md text-white bg-neutral-700 appearance-none foucs:outline-none focus:ring-0 peer"
         placeholder=" "
       />
       <label
