@@ -5,7 +5,7 @@ import useFavorites from "@/hooks/useFavorites";
 import { AiOutlinePlus, AiOutlineCheck } from "react-icons/ai";
 
 interface FavoriteButtonProps {
-  movieId: number;
+  movieId: string;
 }
 
 const FavoriteButton: React.FC<FavoriteButtonProps> = ({ movieId }) => {
