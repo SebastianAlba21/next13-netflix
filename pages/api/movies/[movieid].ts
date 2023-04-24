@@ -8,7 +8,7 @@ export default async function handler(
 ) {
   if (req.method !== "GET") return res.status(405).end();
   try {
-    await serverAuth(req);
+    await serverAuth(req, res);
     const { movieid } = req.query;
     if (typeof movieid !== "string") {
       throw new Error("Invalid movie id");

@@ -22,7 +22,6 @@ const FavoriteButton: React.FC<FavoriteButtonProps> = ({ movieId }) => {
     } else {
       response = await axios.post("/api/favorite", { movieId });
     }
-    console.log(response);
     const updateFavoritesIds = response?.data?.favoritesIds;
     mutate({
       ...currentUser,
